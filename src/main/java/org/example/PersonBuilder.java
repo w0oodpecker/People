@@ -40,7 +40,7 @@ public class PersonBuilder {
     public Person build() {
         if (this.name != null & this.surname != null) {
             return new Person(this.name, this.surname,
-                    this.age != null ? (int)this.age : AGEDAFAULT,
+                    this.age != null ? (int) this.age : AGEDAFAULT,
                     this.address != null ? this.address : ADDRESSDEFAULT);
         } else {
             throw new IllegalStateException();
